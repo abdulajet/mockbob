@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MockBob</title>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div>
+    <img class="roundimg" src="face.jpg" alt="spongebob mocking meme">
+  </div>
+
+  <div>
+    <h2>MockBob</h2>
+  </div>
+
+  <div>
+    <p>Paste your text in to change the capitalisation</p>
+  </div>
+
+  <div>
+    <textarea rows="10" cols="50" id="text"></textarea>
+  </div>
+
+  <div>
+    <button type="button" onclick="changeText()">Change!</button>
+  </div>
+
+  <script>
+
+    function changeText(){
+      var text = document.getElementById('text').value;
+      var array = Array.from(text);
+
+      for (var i = 0; i < array.length; i++){
+        if (i % 2 == 0){
+          array[i] = array[i].toUpperCase();
+        }
+      }
+      document.getElementById('text').value = array.join("");
+    }
+
+  </script>
+
+</body>
+
+</html>

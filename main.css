@@ -1,0 +1,17 @@
+html {
+  text-align: center;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #000;
+
+}
+
+.roundimg {
+  margin-top: 20px;
+  width: 50%;
+  max-width: 150px;
+}
+
+h3 {
+  margin-top: 20px;
+  padding: 0 20px;
+}
